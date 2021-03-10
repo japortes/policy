@@ -2,6 +2,7 @@
  "properties": {
   "displayName": "Tempo",
   "policyType": "Custom",
+  "description": "",
   "metadata": {
    "category": "Regulatory Compliance",
    "parameterScopes": {
@@ -9,8 +10,8 @@
    },
    "createdBy": "a6bade8d-ce18-41b6-8cad-df8c87fd71b5",
    "createdOn": "2021-03-10T03:43:39.0017195Z",
-   "updatedBy": null,
-   "updatedOn": null
+   "updatedBy": "a6bade8d-ce18-41b6-8cad-df8c87fd71b5",
+   "updatedOn": "2021-03-10T05:04:26.0145076Z"
   },
   "parameters": {},
   "policyDefinitions": [
@@ -23,10 +24,53 @@
        "microsoft.sql/managedinstances/sqlagent",
        "microsoft.azuredata/sqlmanagedinstances",
        "microsoft.keyvault/vaults/keys",
-       "microsoft.storage/storageaccounts"
+       "microsoft.storage/storageaccounts",
+       "microsoft.keyvault/vaults/secrets",
+       "microsoft.keyvault/vaults",
+       "microsoft.keyvault/locations",
+       "microsoft.logic/locations",
+       "microsoft.logic/locations/workflows",
+       "microsoft.logic/workflows",
+       "microsoft.logic/workflows/accesskeys",
+       "microsoft.logic/integrationaccounts/assemblies",
+       "microsoft.logic/isolatedenvironments"
       ]
      }
     },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Storage Accounts should use a virtual network service endpoint_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/60d21c4f-21a3-4d94-85f4-b924e6aeeda4",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Web Application should only be accessible over HTTPS_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a4af4a39-4135-47fb-b175-47fbdf85311d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Certificates should have the specified maximum validity period_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a075868-4c26-42ef-914c-5bc007359560",
+    "parameters": {
+     "maximumValidityInMonths": {
+      "value": 12
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Subscriptions should have a contact email address for security issues_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4f4f78b8-e367-4b10-a341-d9a4ad5cf1c7",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Function apps should have 'Client Certificates (Incoming client certificates)' enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/eaebaea7-8013-4ceb-9d14-7eb32271373c",
+    "parameters": {},
     "groupNames": []
    }
   ],
