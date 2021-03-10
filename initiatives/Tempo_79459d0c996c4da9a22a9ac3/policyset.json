@@ -1,0 +1,38 @@
+{
+ "properties": {
+  "displayName": "Tempo",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Regulatory Compliance",
+   "parameterScopes": {
+    "listOfResourceTypes": "/subscriptions/94e18486-2b27-4791-abdf-9aaa1bbd8b7c"
+   },
+   "createdBy": "a6bade8d-ce18-41b6-8cad-df8c87fd71b5",
+   "createdOn": "2021-03-10T03:43:39.0017195Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Audit diagnostic setting_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7f89b1eb-583c-429a-8828-af049802c1d9",
+    "parameters": {
+     "listOfResourceTypes": {
+      "value": [
+       "microsoft.sql/managedinstances/sqlagent",
+       "microsoft.azuredata/sqlmanagedinstances",
+       "microsoft.keyvault/vaults/keys",
+       "microsoft.storage/storageaccounts"
+      ]
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/94e18486-2b27-4791-abdf-9aaa1bbd8b7c/providers/Microsoft.Authorization/policySetDefinitions/79459d0c996c4da9a22a9ac3",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "79459d0c996c4da9a22a9ac3"
+}
